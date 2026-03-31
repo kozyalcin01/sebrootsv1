@@ -10,6 +10,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import Mailing from '@/components/mailing';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
+import ReadingProgress from '@/components/ui/reading-progress';
 
 export async function generateStaticParams() {
   const trPosts = getPosts('tr').map((p) => ({ lang: 'tr', slug: p.slug }));
@@ -34,6 +35,7 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <ReadingProgress />
       <Navbar lang={locale} dict={dict} />
       <main>
         {/* Hero image */}

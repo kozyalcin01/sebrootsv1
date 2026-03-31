@@ -19,9 +19,18 @@ export default function Mailing({ lang, dict }: Props) {
     e.preventDefault();
     if (!email) return;
     setStatus('loading');
-    await new Promise((r) => setTimeout(r, 1000));
-    setStatus('success');
-    setEmail('');
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error();
+      setStatus('success');
+      setEmail('');
+    } catch {
+      setStatus('error');
+    }
   };
 
   const kvkkHref = lang === 'tr' ? '/tr/kvkk' : '/en/privacy';
@@ -74,6 +83,11 @@ export default function Mailing({ lang, dict }: Props) {
                 {status === 'loading' ? m.loading : m.cta}
               </Button>
             </form>
+          )}
+          {status === 'error' && (
+            <p className="mt-3 text-xs text-red-400 font-light text-center">
+              {lang === 'tr' ? 'Bir hata oluştu. Lütfen tekrar deneyin.' : 'Something went wrong. Please try again.'}
+            </p>
           )}
 
           <p className="mt-6 text-[10px] text-[#1a1a1a]/30 font-light leading-relaxed">

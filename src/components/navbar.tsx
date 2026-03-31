@@ -24,6 +24,7 @@ export default function Navbar({ lang, dict }: Props) {
     { href: `${base}/koleksiyon`, label: dict.nav.collection },
     { href: `${base}/hikayemiz`, label: dict.nav.story },
     { href: `${base}/blog`, label: dict.nav.blog },
+    { href: `${base}/iletisim`, label: dict.nav.contact },
   ];
 
   return (

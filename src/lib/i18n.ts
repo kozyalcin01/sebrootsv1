@@ -6,6 +6,7 @@ export type Dict = {
     story: string;
     blog: string;
     newsletter: string;
+    contact: string;
   };
   hero: {
     cta: string;
@@ -77,6 +78,22 @@ export type Dict = {
     kullanim: string;
     iade: string;
   };
+  contact: {
+    eyebrow: string;
+    heading: string[];
+    infoText: string;
+    email: string;
+    instagram: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    subjectPlaceholder: string;
+    messagePlaceholder: string;
+    submit: string;
+    loading: string;
+    successTitle: string;
+    successBody: string;
+    errorText: string;
+  };
 };
 
 const tr: Dict = {
@@ -85,6 +102,7 @@ const tr: Dict = {
     story: 'Hikayemiz',
     blog: 'Blog',
     newsletter: 'Bülten',
+    contact: 'İletişim',
   },
   hero: {
     cta: 'Koleksiyonu Keşfet',
@@ -139,6 +157,7 @@ const tr: Dict = {
       { href: '/tr/koleksiyon', label: 'Koleksiyon' },
       { href: '/tr/hikayemiz', label: 'Hikayemiz' },
       { href: '/tr/blog', label: 'Blog' },
+      { href: '/tr/iletisim', label: 'İletişim' },
     ],
     legal_links: [
       { href: '/tr/kvkk', label: 'KVKK Aydınlatma Metni' },
@@ -169,6 +188,22 @@ const tr: Dict = {
     kullanim: 'Kullanım Koşulları',
     iade: 'İade & Değişim',
   },
+  contact: {
+    eyebrow: 'İletişim',
+    heading: ['Seninle', 'konuşalım.'],
+    infoText: 'Her soru, her düşünce, her sipariş talebi için buradayız. En geç 24 saat içinde dönüş yaparız.',
+    email: 'hello@sobroots.com',
+    instagram: '@sobroots',
+    namePlaceholder: 'Ad Soyad',
+    emailPlaceholder: 'E-posta',
+    subjectPlaceholder: 'Konu',
+    messagePlaceholder: 'Mesajın...',
+    submit: 'Gönder',
+    loading: '...',
+    successTitle: 'Mesajın alındı.',
+    successBody: 'En geç 24 saat içinde geri döneceğiz.',
+    errorText: 'Gönderim başarısız. Lütfen tekrar deneyin.',
+  },
 };
 
 const en: Dict = {
@@ -177,6 +212,7 @@ const en: Dict = {
     story: 'Our Story',
     blog: 'Blog',
     newsletter: 'Newsletter',
+    contact: 'Contact',
   },
   hero: {
     cta: 'Explore the Collection',
@@ -228,14 +264,15 @@ const en: Dict = {
     explore: 'Explore',
     legal: 'Legal',
     links: [
-      { href: '/en/collection', label: 'Collection' },
-      { href: '/en/story', label: 'Our Story' },
+      { href: '/en/koleksiyon', label: 'Collection' },
+      { href: '/en/hikayemiz', label: 'Our Story' },
       { href: '/en/blog', label: 'Blog' },
+      { href: '/en/iletisim', label: 'Contact' },
     ],
     legal_links: [
-      { href: '/en/privacy', label: 'Privacy Policy' },
-      { href: '/en/terms', label: 'Terms of Use' },
-      { href: '/en/returns', label: 'Returns & Exchanges' },
+      { href: '/en/gizlilik', label: 'Privacy Policy' },
+      { href: '/en/kullanim', label: 'Terms of Use' },
+      { href: '/en/iade', label: 'Returns & Exchanges' },
     ],
     copy: '© {year} Sobroots. All rights reserved.',
     slogan: 'Carry Your Roots',
@@ -259,6 +296,22 @@ const en: Dict = {
     gizlilik: 'Privacy Policy',
     kullanim: 'Terms of Use',
     iade: 'Returns & Exchanges',
+  },
+  contact: {
+    eyebrow: 'Contact',
+    heading: ["Let's", 'talk.'],
+    infoText: "We're here for every question, thought, and order request. We'll get back to you within 24 hours.",
+    email: 'hello@sobroots.com',
+    instagram: '@sobroots',
+    namePlaceholder: 'Full Name',
+    emailPlaceholder: 'Email',
+    subjectPlaceholder: 'Subject',
+    messagePlaceholder: 'Your message...',
+    submit: 'Send',
+    loading: '...',
+    successTitle: 'Message received.',
+    successBody: "We'll get back to you within 24 hours.",
+    errorText: 'Failed to send. Please try again.',
   },
 };
 

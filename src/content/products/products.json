@@ -1,0 +1,156 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "slug": "toprak",
+      "name": {
+        "tr": "Toprak",
+        "en": "Toprak"
+      },
+      "subtitle": {
+        "tr": "Deri Omuz Çantası",
+        "en": "Leather Shoulder Bag"
+      },
+      "tag": {
+        "tr": "Sınırlı — 12 Adet",
+        "en": "Limited — 12 Pieces"
+      },
+      "soldOut": false,
+      "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80",
+      "tagline": {
+        "tr": "Güneşin ve toprağın sıcaklığını omzunuzda taşıyın",
+        "en": "Carry the warmth of the sun and earth on your shoulder"
+      },
+      "description": {
+        "tr": "Tamamen el yapımı olan Toprak, doğanın kusursuzluğunu günlük stilinize taşıyor. Yumuşak deri dokusu, yıllar geçtikçe karakter kazanan ve güzelleşen bir yapıya sahip. İç hacmi, gün boyu ihtiyacınız olan her şeyi rahatça sığdırabileceğiniz ölçülerde tasarlandı. Her bir dikişinde zanaatkarın emeğini ve özenini hissedeceğiniz bu özel omuz çantası, zamanın ötesinde bir şıklık ve pratiklik sunarak gardırobunuzun en değerli, vazgeçilmez ve asil bir parçası olmaya aday.",
+        "en": "Entirely handmade, Toprak brings the perfection of nature into your daily style. Its soft leather texture gains character and grows more beautiful over the years. The interior volume is designed thoughtfully to comfortably fit everything you need throughout your day. Within every single stitch, you will feel the artisan's profound effort and care. Offering a timeless elegance and practicality, this special shoulder bag is truly destined to be the most valuable, indispensable, and noble piece of your entire wardrobe."
+      },
+      "features": {
+        "tr": [
+          "%100 Doğal Dana Derisi",
+          "Geniş iç hacim ve fermuarlı cep",
+          "El işçiliği özel dikiş detayları"
+        ],
+        "en": [
+          "100% Natural Calf Leather",
+          "Spacious interior and zippered pocket",
+          "Handcrafted special stitch details"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "slug": "kil",
+      "name": {
+        "tr": "Kıl",
+        "en": "Kıl"
+      },
+      "subtitle": {
+        "tr": "Mini Tote Çanta",
+        "en": "Mini Tote Bag"
+      },
+      "tag": {
+        "tr": "Yeni Sezon",
+        "en": "New Season"
+      },
+      "soldOut": false,
+      "image": "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=800&q=80",
+      "tagline": {
+        "tr": "İnce detayların büyük değişimi",
+        "en": "The grand transformation of fine details"
+      },
+      "description": {
+        "tr": "Şehrin hızlı ritmine zarif bir şekilde ayak uydurmak isteyenler için mükemmel bir seçenek. 'Kıl' Mini Tote, minimal yapısına rağmen beklenmedik bir iç genişliğe sahip. Gerçek derinin tok duruşu, ona hem modern hem de yapılandırılmış bir siluet kazandırıyor. Ofis toplantılarından akşam yemeklerine geçişte size özgüvenle eşlik edecek olan bu model, ince kusursuz el işçiliğinin cesur ama aynı zamanda zarif bir manifestosu olarak dikkat çekiyor.",
+        "en": "A perfect choice for those who want to elegantly keep up with the fast rhythm of the city. The 'Kıl' Mini Tote has an unexpected interior spaciousness despite its very minimal structure. The firm stance of genuine leather gives it a highly modern and structured silhouette. Accompanying you with pure confidence through office meetings directly into evening dinners, this model truly stands out as a bold and elegant manifesto of fine, flawless, and unparalleled craftsmanship."
+      },
+      "features": {
+        "tr": [
+          "Ayarlanabilir ve çıkarılabilir omuz askısı",
+          "Kompakt tasarım",
+          "Mıknatıslı gizli kapanış"
+        ],
+        "en": [
+          "Adjustable and removable shoulder strap",
+          "Compact design",
+          "Magnetic hidden closure"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "slug": "koy",
+      "name": {
+        "tr": "Köy",
+        "en": "Köy"
+      },
+      "subtitle": {
+        "tr": "Kapaklı Çapraz Çanta",
+        "en": "Flap Crossbody Bag"
+      },
+      "tag": {
+        "tr": "Son 3 Adet",
+        "en": "Last 3 Pieces"
+      },
+      "soldOut": false,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "tagline": {
+        "tr": "Gelenekten beslenen özgür ruh",
+        "en": "A free spirit nourished by tradition"
+      },
+      "description": {
+        "tr": "Köy, adını sadelikten ve doğal olandan alıyor. İkonik kapaklı ve çapraz askılı tasarımı, ellerinizi tamamen özgür bırakırken stilinize nostaljik bir dokunuş ekliyor. Keskin dikiş detayları ve asimetrik kesimi, derinin ham ve pürüzsüz güzelliğini gözler önüne seriyor. Hafta sonu yürüyüşlerinde, müzelerde veya yeni bir şehri keşfederken tüm enerjinize tam uyum sağlayacak olan Köy çapraz çanta modelimiz, dayanıklılığıyla da size yıllar boyu sürecek sarsılmaz bir sadakatle eşlik edecek.",
+        "en": "Köy takes its name from simplicity and the very essence of the natural. Its highly iconic flap and crossbody design leaves your hands completely free while generously adding a nostalgic touch to your style. The sharp stitching details and asymmetrical cut perfectly reveal the raw and smooth beauty of the leather. Ready to perfectly match your energy during weekend walks, in museums, or while exploring a brand new city, our Köy crossbody bag guarantees years of unwavering loyalty."
+      },
+      "features": {
+        "tr": [
+          "Antik pirinç aksesuarlar",
+          "Güvenli kapak tasarımı",
+          "Dayanıklı ve kalın deri yapısı"
+        ],
+        "en": [
+          "Antique brass hardware",
+          "Secure flap design",
+          "Durable and thick leather structure"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "slug": "tas",
+      "name": {
+        "tr": "Taş",
+        "en": "Taş"
+      },
+      "subtitle": {
+        "tr": "Deri Clutch",
+        "en": "Leather Clutch"
+      },
+      "tag": {
+        "tr": "Tükendi",
+        "en": "Sold Out"
+      },
+      "soldOut": true,
+      "image": "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=800&q=80",
+      "tagline": {
+        "tr": "Gecenin pürüzsüz ve karanlık sırrı",
+        "en": "The smooth and dark secret of the night"
+      },
+      "description": {
+        "tr": "Davetlerin ve özel akşamların tartışılmaz yıldızı 'Taş', avuç içine tam oturan ergonomik tasarımıyla son derece dikkat çekici. Derinin en sert ama bir o kadar da zarif formuyla tasarlandı. Sadece en temel eşyalarınızı -telefonunuz, kartlığınız ve kırmızı rujunuz- alacak şekilde kusursuz minimalizmle formüle edildi. Göz alıcı detaylardan ziyade formunun ve dokusunun güzelliğine güvenen Taş, sade şıklığı bir adım öteye taşıyarak stilinize her seferinde son derece sofistike, gizemli ve ayrıcalıklı bir imza atıyor.",
+        "en": "The undisputed star of invitations and special evenings, 'Taş', is highly remarkable with its wonderfully ergonomic design that fits perfectly directly into the palm of your hand. It is brilliantly designed in the firmest yet most elegant form of leather. Formulated with pure minimalism to hold only your absolute core essentials - your phone, cardholder, and lipstick. Relying entirely on the breathtaking beauty of its form and texture rather than flashy details, Taş carries simple elegance deeply forward."
+      },
+      "features": {
+        "tr": [
+          "Sert ve formunu koruyan gövde",
+          "Zarif bileklik detayı",
+          "Minimal iç astar"
+        ],
+        "en": [
+          "Rigid body that maintains its shape",
+          "Elegant wristlet detail",
+          "Minimal interior lining"
+        ]
+      }
+    }
+  ]
+}

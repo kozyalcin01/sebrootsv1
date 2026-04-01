@@ -4,12 +4,7 @@ export const alt = 'Sobroots — Carry Your Roots';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default async function Image() {
-  // Google Fonts'tan .woff/.ttf formatında font getirmek için örnek fetch kullanımı (edge compatibility için gstatic ttf linki)
-  const fontData = await fetch(
-    new URL('https://fonts.gstatic.com/s/cormorantgaramond/v15/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYrHtmaQ.ttf', import.meta.url)
-  ).then((res) => res.arrayBuffer()).catch(() => null);
-
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -25,16 +20,16 @@ export default async function Image() {
           position: 'relative',
         }}
       >
-        {/* Sol tarafta büyük dekoratif metin */}
+        {/* Dekoratif arka plan harfi */}
         <div
           style={{
             position: 'absolute',
-            left: 0,
+            left: '-20px',
             top: '50%',
             transform: 'translateY(-50%)',
             fontSize: 320,
             color: 'rgba(255,255,255,0.04)',
-            fontFamily: fontData ? '"Cormorant Garamond"' : 'serif',
+            fontFamily: 'Georgia, serif',
             margin: 0,
             lineHeight: 1,
           }}
@@ -42,7 +37,7 @@ export default async function Image() {
           S
         </div>
 
-        {/* Sağ alt köşede ince çizgi detayı */}
+        {/* Sağ alt çizgi detayı */}
         <div
           style={{
             position: 'absolute',
@@ -54,7 +49,7 @@ export default async function Image() {
           }}
         />
 
-        {/* Sağ tarafta soyut kutu efekti */}
+        {/* Sağ soyut kutu */}
         <div
           style={{
             position: 'absolute',
@@ -67,76 +62,24 @@ export default async function Image() {
           }}
         />
 
-        {/* Merkez içerik */}
+        {/* Ana içerik */}
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div
-            style={{
-              fontSize: 11,
-              letterSpacing: 4,
-              color: '#89A8B2',
-              textTransform: 'uppercase',
-            }}
-          >
+          <div style={{ fontSize: 11, letterSpacing: 4, color: '#89A8B2', textTransform: 'uppercase' }}>
             EST. 2021
           </div>
-
-          <div
-            style={{
-              fontSize: 88,
-              fontWeight: 300,
-              color: '#ffffff',
-              letterSpacing: 6,
-              fontFamily: fontData ? '"Cormorant Garamond"' : 'serif',
-              marginTop: 16,
-            }}
-          >
+          <div style={{ fontSize: 88, fontWeight: 300, color: '#ffffff', letterSpacing: 6, fontFamily: 'Georgia, serif', marginTop: 16 }}>
             Sobroots
           </div>
-
-          <div
-            style={{
-              fontSize: 18,
-              color: 'rgba(255,255,255,0.35)',
-              letterSpacing: 3,
-              marginTop: 16,
-            }}
-          >
+          <div style={{ fontSize: 18, color: 'rgba(255,255,255,0.35)', letterSpacing: 3, marginTop: 16 }}>
             Carry Your Roots
           </div>
-
-          <div
-            style={{
-              width: 48,
-              height: 1,
-              background: '#89A8B2',
-              marginTop: 40,
-            }}
-          />
-
-          <div
-            style={{
-              fontSize: 13,
-              color: 'rgba(255,255,255,0.3)',
-              marginTop: 16,
-            }}
-          >
+          <div style={{ width: 48, height: 1, background: '#89A8B2', marginTop: 40 }} />
+          <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.3)', marginTop: 16 }}>
             El yapımı deri çantalar · Sınırlı üretim
           </div>
         </div>
       </div>
     ),
-    {
-      ...size,
-      fonts: fontData
-        ? [
-            {
-              name: 'Cormorant Garamond',
-              data: fontData,
-              style: 'normal',
-              weight: 300,
-            },
-          ]
-        : undefined,
-    }
+    { ...size }
   );
 }

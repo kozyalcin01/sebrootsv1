@@ -1,0 +1,35 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "regions": [
+    "fra1"
+  ],
+  "headers": [
+    {
+      "source": "/(_next/static|favicon.ico|blog/.*\\.(jpg|png|webp))(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/en/story",
+      "destination": "/en/hikayemiz",
+      "permanent": true
+    },
+    {
+      "source": "/en/collection",
+      "destination": "/en/koleksiyon",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact",
+      "destination": "/en/iletisim",
+      "permanent": true
+    }
+  ]
+}

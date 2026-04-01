@@ -31,6 +31,7 @@ export async function generateMetadata({
   const { lang } = await params;
   const isTr = lang === 'tr';
   return {
+    metadataBase: new URL('https://sobroots.com'),
     title: 'Sobroots — Carry Your Roots',
     description: isTr
       ? 'Köklerinden güç alan kadınlar için el yapımı deri çantalar. Sınırlı üretim, zamansız tasarım.'

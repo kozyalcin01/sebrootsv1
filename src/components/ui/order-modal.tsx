@@ -17,7 +17,8 @@ export default function OrderModal({ isOpen, onClose, productName, productSubtit
     ? `Merhaba! "${productName}" (${productSubtitle}) ürünü hakkında bilgi almak ve sipariş vermek istiyorum.`
     : `Hello! I'd like to get information and place an order for "${productName}" (${productSubtitle}).`;
 
-  const waUrl = `https://wa.me/905XXXXXXXXX?text=${encodeURIComponent(message)}`;
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '905XXXXXXXXX';
+  const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div

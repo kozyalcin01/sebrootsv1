@@ -11,6 +11,7 @@ import Footer from '@/components/footer';
 import Mailing from '@/components/mailing';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import ReadingProgress from '@/components/ui/reading-progress';
+import ArticleJsonLd from '@/components/seo/article-jsonld';
 
 export async function generateStaticParams() {
   const trPosts = getPosts('tr').map((p) => ({ lang: 'tr', slug: p.slug }));
@@ -35,6 +36,15 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <ArticleJsonLd
+        title={post.title}
+        excerpt={post.excerpt}
+        image={post.image}
+        slug={post.slug}
+        lang={locale}
+        date={post.date}
+        category={post.category}
+      />
       <ReadingProgress />
       <Navbar lang={locale} dict={dict} />
       <main>

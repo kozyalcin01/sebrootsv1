@@ -1,15 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { locales, defaultLocale, Locale } from '@/lib/locale';
 
-export type { Locale };
-
 function getLocale(request: NextRequest): Locale {
   const acceptLanguage = request.headers.get('accept-language') ?? '';
   if (acceptLanguage.toLowerCase().includes('en')) return 'en';
   return defaultLocale;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (

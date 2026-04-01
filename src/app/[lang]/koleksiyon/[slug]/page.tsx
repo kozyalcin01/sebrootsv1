@@ -7,6 +7,8 @@ import { getProduct, products } from '@/lib/products';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
+import OrderButton from '@/components/ui/order-button';
+import ProductJsonLd from '@/components/seo/product-jsonld';
 
 export async function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -26,6 +28,14 @@ export default async function ProductPage({
 
   return (
     <>
+      <ProductJsonLd
+        name={product.name[locale]}
+        description={product.description?.[locale] ?? product.subtitle[locale]}
+        image={product.image}
+        slug={product.slug}
+        lang={locale}
+        soldOut={product.soldOut}
+      />
       <Navbar lang={locale} dict={dict} />
       <main className="bg-[#F1F0E8] min-h-screen">
         <div className="max-w-7xl mx-auto px-6 md:px-12 pt-28 pb-24">
@@ -115,12 +125,14 @@ export default async function ProductPage({
               )}
 
               <ScrollReveal delay={240}>
-                <button
-                  disabled={product.soldOut}
-                  className="w-full text-xs tracking-[0.25em] uppercase font-light py-4 border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-[#F1F0E8] transition-all duration-500 disabled:opacity-30 disabled:cursor-not-allowed"
-                >
-                  {product.soldOut ? dict.product.soldOut : dict.product.addToCart}
-                </button>
+                <OrderButton
+                  productName={product.name[locale]}
+                  productSubtitle={product.subtitle[locale]}
+                  lang={locale}
+                  soldOut={product.soldOut}
+                  soldOutLabel={dict.product.soldOut}
+                  addToCartLabel={dict.product.addToCart}
+                />
               </ScrollReveal>
             </div>
           </div>

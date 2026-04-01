@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { isValidLocale, Locale } from '@/lib/locale';
 import { CustomCursor } from '@/components/ui/custom-cursor';
+import { Analytics } from '@vercel/analytics/react';
 import '../globals.css';
 
 const cormorant = Cormorant_Garamond({
@@ -74,6 +75,7 @@ export default async function LangLayout({
       <body className="min-h-full flex flex-col">
         <CustomCursor />
         <div className="page-enter flex flex-col flex-1">{children}</div>
+        <Analytics />
       </body>
     </html>
   );

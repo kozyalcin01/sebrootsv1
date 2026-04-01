@@ -7,7 +7,7 @@ const BASE = 'https://sobroots.com';
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ['tr', 'en'] as const;
 
-  const staticRoutes = ['', '/koleksiyon', '/hikayemiz', '/blog', '/kvkk', '/gizlilik', '/kullanim', '/iade'];
+  const staticRoutes = ['', '/koleksiyon', '/hikayemiz', '/blog', '/iletisim', '/kvkk', '/gizlilik', '/kullanim', '/iade'];
 
   const staticEntries = locales.flatMap((lang) =>
     staticRoutes.map((route) => ({
